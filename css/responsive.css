@@ -664,22 +664,9 @@ footer h4 {
    Scrolling CTA Box Link
    ============================= */
 
+@media only screen and (max-width: 1040px) {
 /* Styles a fixed-position call-to-action box on the right side of the page */
 .scrolling-cta-box {
-    position: fixed; /* Sticks to the viewport */
-    right: -60px; /* Keeps it partially tucked */
-    transition: right 0.3s ease-in-out;
-    top: 30%; /* Positions vertically at 46% from the top */
-    z-index: 50; /* Ensures it appears above most elements */
-    transform: translateY(-50%); /* Centers it vertically */
-    width: 150px; /* Fixed width */
-    background-color: blue; /* Sets background color */
-    color: white; /* Sets text color */
-    display: flex; /* Uses flexbox for alignment */
-    align-items: center; /* Centers content vertically */
-    justify-content: center; /* Centers content horizontally */
-    border-radius: 10px 0 0 10px; /* Rounds left corners */
-    padding: 5px;
-    z-index: 1003;
+    right: -85px; /* Keeps it partially tucked */
 }
-
+}
