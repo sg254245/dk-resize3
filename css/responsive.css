@@ -1,0 +1,659 @@
+/* =============================
+  DK RAP SONG CSS DOCUMENT - UPDATED 2025 - Responsive Design
+  ============================= */
+
+  @media screen and (max-width: 1130px) {
+    * {
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      html, body {
+        width: 100%;
+        overflow-x: hidden;
+      }
+   }
+
+
+   /* =============================
+   GLOBAL NAVIGATION STYLES
+   ============================= */
+  
+/* Hide the checkbox completely */
+.menu-checkbox {
+    display: none;
+}
+/* Style the hamburger menu icon */
+.menu-icon {
+    display: none;
+    font-size: 80px;
+    cursor: pointer;
+    background: none;
+    color: white;
+    position: relative;
+    margin-top: 10px;
+    z-index: 1001;
+}
+
+/* When checkbox is checked, show menu */
+    .menu-checkbox:checked ~ nav .nav-links {
+        display: flex;
+    }
+
+/* =============================
+   TABLET STYLES
+   ============================= */
+   @media screen and (max-width: 1130px) {
+    /* Tablet styles */
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #0b5e3b; /* Header background */
+        z-index: 1000;
+        height: auto;
+        padding: 30px 0; /* Reduced padding */
+        text-align: center;
+        position: relative;
+    }
+    
+    .logo-link {
+        font-size: 40px; /* Slightly smaller logo text */
+        text-align: center;
+        display: block;
+        width: 100%;
+    }
+    
+    /* Show the hamburger menu icon */
+    .menu-icon {
+        display: block;
+        color: white;
+    }
+    
+    /* Main Navigation Menu */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #ff5733 !important; /* Main nav background */
+        position: absolute;
+        top: 220px;  /* Adjusted top position */
+        left: 50%;
+        transform: translateX(-50%);
+        width: 95%;  /* Slightly wider for tablets */
+        padding: 15px 0;  /* Reduced padding */
+        text-align: center;
+        border-radius: 8px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+    }
+    
+    .nav-links li {
+        padding: 8px;  /* Reduced spacing */
+        text-align: center;
+        position: relative;
+    }
+    
+    .nav-links li a {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;  /* Smaller text */
+        display: block;
+        text-align: center;
+    }
+    
+    /* Nested (secondary) menu styling with original yellow */
+    .nav-links li ul {
+        display: none;          /* Hidden by default */
+        background: #ffd700;    /* Original yellow background */
+        width: 100%;            /* Full width of parent */
+        padding: 8px 0;         /* Reduced padding */
+        border-radius: 8px;
+        text-align: center;
+        position: static;       /* Flow naturally to push items down */
+        font-size: 18px;        /* Adjust submenu font size */
+    }
+    
+    /* Toggle nested menu on hover or focus */
+    .nav-links li:hover > ul,
+    .nav-links li:focus-within > ul {
+        display: block;
+    }
+  }
+  
+  /* Additional adjustments for smaller mobile screens */
+  @media screen and (max-width: 600px) {
+    header {
+        padding: 20px 0;
+    }
+    .logo-link {
+        font-size: 30px;
+    }
+    .nav-links {
+        top: 200px;
+        width: 100%;
+        padding: 10px 0;
+    }
+    .nav-links li {
+        padding: 5px;
+    }
+    .nav-links li a {
+        font-size: 18px;
+    }
+    .nav-links li ul {
+        padding: 5px 0;
+        font-size: 16px;
+    }
+  }
+  
+
+  
+/* =============================
+   Homepage - Hero - Character Header
+   ============================= */
+
+@media screen and (max-width: 1130px) {
+        /* Wrapper for the character image */
+        .homepage-header-box {
+          width: 100%; /* Full width */
+          position: relative;
+          display: inline-block; /* Ensures it wraps around the image */
+        }
+      
+        /* Styles the character image */
+        .character-image {
+          width: 100%; /* Makes the image responsive */
+          height: auto; /* Fixed height */
+          object-fit: cover; /* Fills the box while maintaining aspect ratio */
+          object-position: top;
+          display: block; /* Removes extra space below the image */
+        }
+      }
+
+/* =============================
+    Floating Button - position resize
+   ============================= */
+   @media screen and (min-width: 769px)and (max-width: 900px) {
+    /* Styles the floating button */
+    .floating-button {
+     position: absolute;
+     bottom: -32%;
+    
+ }
+    }
+
+@media screen and (min-width: 401px)and (max-width: 768px) {
+        /* Styles the floating button */
+        .floating-button {
+         position: absolute;
+         bottom: -5%;
+        
+     }
+        }
+
+
+     /* Mobile - floating button */
+   @media screen and (max-width: 400px) {
+   .floating-button {
+    position: absolute;
+    bottom: -9%;
+}
+   }
+
+
+   /* =============================
+   Hero Box (Tablet)
+   ============================= */
+   @media screen and (max-width: 1020px) {
+    .hero-box {
+        padding: 30px;
+    }
+
+    .hero-box h1 {
+        padding: 30px 20px 0px 20px;
+    }
+ /* Group p and ul to have the same padding */
+ .hero-box p,
+ .hero-box ul {
+   padding: 5px 15px;
+ }
+}
+
+   /* =============================
+  Orgin Story
+   ============================= */
+
+   
+   @media screen and (min-width: 530px)and (max-width: 1020px) {
+        .origin-story-box {
+            gap: 40px;
+            color: white;
+        }
+    }
+    @media screen and (max-width: 529px) {
+
+        .origin-story-box {
+            padding: 50px 50px;
+        }
+       }
+
+    @media screen and (max-width: 1020px) {
+/* Force the origin story container to stack its asides vertically */
+#origin-story {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Ensure each aside takes full width */
+#origin-story aside {
+    width: 100%;
+    margin-bottom: 15px; /* Reduced spacing between elements */
+}
+
+/* Adjust the development section to a single column grid */
+.origin-story-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column layout */
+    gap: 15px; /* Reduced gap */
+    padding: 0 15px; /* Reduced horizontal padding */
+}
+
+/* Make images responsive */
+.score-image {
+    width: 100%;
+    height: auto;
+}
+
+.legacy-box {
+    padding: 50px 50px;
+}
+
+   }
+
+   @media screen and (min-width: 601px) and (max-width: 1200px)  {
+   .origin-story-box p {
+
+    padding: 0 30px 0 30px;
+}
+}
+
+     /* =============================
+  Video
+   ============================= */
+
+   @media screen and (max-width: 1020px) {
+    .three-grid-container {
+      display: grid;
+      grid-template-columns: 1fr; /* Single column layout */
+      width: 100%;
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 0;           /* Remove any extra padding if needed */
+      box-sizing: border-box;
+      overflow-x: hidden;   /* Prevent horizontal overflow */
+    }
+    
+    .three-grid-sidebar {
+      width: 100%;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 50px 20px 50px 20px;           /* Adjust if necessary */
+    }
+
+      
+    .three-grid-main-content {
+      width: 100%;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;           /* Adjust if necessary */
+    }
+  
+  .video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+    .video-wrapper iframe {
+      width: 100%;
+      height: auto; /* Adjust height as needed */
+      border: 0;
+    }
+  }
+  
+  @media screen and (min-width: 401px) and (max-width: 1200px)  {
+  .three-grid-main-content h1 {
+   
+    padding-top: 50px;     
+  }
+}
+
+
+ /* =============================
+   Character Reference Cards - Container (Tablet)
+ ============================= */
+ @media screen and (min-width: 601px) and (max-width: 1200px)  {
+    .character-reference-box {
+        width: 100%;
+    }
+    .character-reference-grid-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+        gap: 120px 40px; /* More spacing */
+        padding: 50px 80px; /* Extra padding */
+    }
+
+    .card p {
+        padding: 10px 20px 20px 20px;
+    }
+
+    .cutout-image {
+        position: absolute;
+        top: -65px; /* Moves the image slightly higher */
+        left: 50%;
+        transform: translateX(-50%);
+        width: 120px; /* Adjust based on desired size */
+        z-index: 10; /* Ensures it stays above other elements */
+        transition: filter 0.3s ease-in-out; /* Smooth transition effect */
+    }
+}
+
+/* =============================
+   Mobile Styles (max-width: 600px)
+   ============================= */
+@media (max-width: 600px) {
+
+    .character-reference-box {
+        padding: 100px 30px 100px 20px;
+    }
+
+    /* Character Reference Cards - Container */
+    .character-reference-grid-container {
+        grid-template-columns: 1fr; /* Single column for mobile */
+        gap: 100px; /* Reduced gap for tighter layout */
+        padding: 20px; /* Reduced padding */
+    }
+
+    /* Responsive Card Spacing */
+    .card {
+        padding: 20px 15px 15px; /* Reduced padding for mobile */
+    }
+
+    .card p {
+        padding: 10px 20px 20px 20px;
+    }
+
+    .cutout-image {
+        position: absolute;
+        top: -80px; /* Moves the image slightly higher */
+        left: 50%;
+        transform: translateX(-50%);
+        width: 120px; /* Adjust based on desired size */
+        z-index: 10; /* Ensures it stays above other elements */
+        transition: filter 0.3s ease-in-out; /* Smooth transition effect */
+    }
+}
+
+/* =============================
+  Articals
+   ============================= */
+
+@media (max-width: 1040px) {
+/* Article Grid Adjustments */
+.article-grid {
+    grid-template-columns: 1fr; /* Single column */
+    gap: 20px; /* Reduced vertical spacing */
+    width: 100%;
+    padding: 0 15px; /* Reduced padding */
+}
+.article-item {
+    padding: 15px;
+}
+
+}
+
+
+/* Tablet adjustments */
+@media screen and (max-width: 820px) {
+    .back-to-top-wrapper {
+        right: 60px;
+        width: 80px;
+        height: 80px;
+    }
+    .back-to-top-image {
+        width: 90px;
+        height: 110px;
+    }
+    .back-to-top {
+        font-size: 14px;
+        padding: 3px;
+    }
+}
+
+/* Mobile adjustments */
+@media screen and (max-width: 480px) {
+    .back-to-top-wrapper {
+        right: 20px;
+        width: 60px;
+        height: 60px;
+    }
+    .back-to-top-image {
+        width: 60px;
+        height: 80px;
+    }
+    .back-to-top {
+        font-size: 12px;
+        padding: 2px;
+    }
+}
+
+
+@media (max-width: 400px) {
+/* Styles the footer */
+
+/* Styles footer heading */
+footer h4 {
+    font-size: 20px; /* Sets font size */
+    color: white; /* Sets text color */
+    text-align: center; /* Centers text */
+    flex-grow: 1; /* Allows it to take available space */
+    padding:  20px 120px;
+}
+}
+
+
+/* =============================
+ LYRICS PAGE
+   ============================= */
+
+
+@media screen and (min-width: 401px) and (max-width: 1200px)  {
+
+    .lyrics-grid-item-1, 
+    .lyrics-grid-item-3 {
+        margin: 0px -90px 0px -90px; /* Increase spacing for tablet view */
+    }
+}
+.lyrics-box {
+ 
+    padding: 20px 210px 80px 210px;
+    
+}
+
+ @media screen and (max-width: 400px) {
+
+    .lyrics-box {
+        padding: 20px 120px 80px 120px;
+    }
+
+    .lyrics-grid-item-1, 
+    .lyrics-grid-item-3 {
+        margin: 0px -160px 0px -160px; /* Increase spacing for tablet view */
+    }
+
+
+/* Start/Stop Karaoke Button */
+.btn-label-left {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ffcc00;
+    color: black;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    transition: background 0.3s ease-in-out;
+    margin-right: 80px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+
+.btn-label-left:hover {
+    background: #ffaa00;
+}
+
+/* Style the buttons */
+ .btn-label-right {
+    display: inline-block;
+    padding: 10px 10px;
+    background: #ffcc00;
+    color: black;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    transition: background 0.3s ease-in-out;
+    text-decoration: none;
+    margin-left: 80px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+  
+}
+
+.btn-label-left:hover, .btn-label-right:hover {
+    background: #ffaa00;
+}
+}
+
+@media screen and (max-width: 400px) {
+    /* Adjust the gif-container to a row layout */
+    .gif-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10px; /* Space between GIF and button */
+    }
+
+    /* Move Print Lyrics button to the left */
+    .print-btn {
+        width: auto; /* Auto-size based on text */
+        align-self: center; /* Center vertically */
+        order: -1; /* Moves button to the left of the GIF */
+        margin-left: -505px;
+    }
+}
+
+
+
+/* =============================
+         FUN FACTS PAGE
+   ============================= */
+
+
+   /* =============================
+   FUN FACTS AND MEMES PAGE - Responsive Design
+   ============================= */
+
+/* 📱 Tablet View (Between 601px and 1024px) */
+@media screen and (max-width: 1024px) {
+    .memes-box {
+        padding: 40px 50px; /* Reduce padding */
+    }
+
+    .media-box-card {
+        max-width: 90%; /* Slightly reduce width for better fit */
+        padding: 15px; /* Reduce padding */
+    }
+
+    .media-box-image {
+        height: 250px; /* Slightly smaller image height */
+    }
+
+    .media-box-text {
+        padding: 0 15px; /* Reduce padding */
+    }
+
+    .media-box-text img {
+        width: 280px; /* Smaller floating image */
+        height: auto;
+    }
+}
+
+/* 📱 Mobile View (600px and below) */
+@media screen and (max-width: 400px) {
+    .memes-box {
+        padding: 30px 50px; /* Reduce padding */
+    }
+
+    .memes-box h1 {
+        font-size: 24px; /* Slightly smaller heading */
+    }
+
+    .media-box-card {
+        max-width: 100%; /* Full width */
+        padding: 10px; /* Reduce padding */
+    }
+
+    .media-box-image {
+        height: 200px; /* Reduce image height */
+    }
+
+    .media-box-text {
+        padding: 0 10px; /* Reduce padding */
+    }
+
+    .media-box-text h2 {
+        font-size: 18px; /* Smaller headings */
+    }
+
+    .media-box-text p {
+        font-size: 14px; /* Smaller paragraph text */
+    }
+
+    .media-box-text img {
+        width: 220px; /* Reduce floating image size */
+        height: auto;
+        float: none; /* Remove float to stack image above text */
+        display: block;
+        margin: 0 auto 10px auto; /* Center image */
+    }
+}
+
+
+
+/* =============================
+ Character pages - lyrics grid template 
+   ============================= */
+
+
+@media only screen and (max-width: 1040px) {
+    /* Allow the outer container height to adjust automatically */
+    .character-container-outerbox {
+      height: auto;
+    }
+    
+    /* Stack left and right columns vertically */
+    .character-inner-container {
+      flex-direction: column;
+    }
+    
+    /* Make both columns full width */
+    .character-left-box,
+    .character-right-box {
+      width: 100%;
+    }
+  }
+  
