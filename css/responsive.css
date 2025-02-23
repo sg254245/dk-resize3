@@ -88,7 +88,7 @@
     }
     
     .nav-links li {
-        padding: 8px;  /* Reduced spacing */
+        padding: 8px 10px 8px 25px;  /* Reduced spacing */
         text-align: center;
         position: relative;
     }
@@ -99,12 +99,15 @@
         font-size: 20px;  /* Smaller text */
         display: block;
         text-align: center;
+        background-color: #ff5733;
+        padding: 10px 15px;
+    border-radius: 4px;
     }
     
     /* Nested (secondary) menu styling with original yellow */
     .nav-links li ul {
         display: none;          /* Hidden by default */
-        background: #ffd700;    /* Original yellow background */
+        background-color: #ffd700;   /* Original yellow background */
         width: 100%;            /* Full width of parent */
         padding: 8px 0;         /* Reduced padding */
         border-radius: 8px;
@@ -112,6 +115,16 @@
         position: static;       /* Flow naturally to push items down */
         font-size: 18px;        /* Adjust submenu font size */
     }
+
+
+.nav-links li ul li a {
+    background-color: #ffd700;
+    color: black;
+    padding: 8px 12px;
+    display: block;
+    border-radius: 4px;
+    margin: 0;
+}
     
     /* Toggle nested menu on hover or focus */
     .nav-links li:hover > ul,
