@@ -449,6 +449,13 @@
     }
 }
 
+@media (max-width: 1040px) {
+    /* Styles the footer */
+    footer {
+        height: 100px; /* Increased height to help with layering */
+        padding: 10px 0 20px 0; /* Adjust padding for spacing */
+    }
+    }
 
 @media (max-width: 400px) {
 /* Styles the footer */
